@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Traveler's Map</title>
+        <link rel="stylesheet" type="text/css" href="./index.css" />
+        <script type="module"  src="./index.js"></script>
+    </head>
+    <body > 
+        <div id = "nav-bar">
+            <h1>Chloe's Google Maps Project</h1>
+            <p id = 'intro'>
+            </p>
+            <div id = 'search-area'>
+                <input type="text" id="autocomplete" placeholder="Search for a place" />
+                <button id="search-button">Search</button>
+            </div>
+            <div id = 'button'> </div>
+             <div id = 'get-distance'>
+                <input id = 'start' type = 'text' placeholder = 'Start' />
+                <br/>
+                <input id = 'end' type = 'text' placeholder = 'End' />
+                <button id = 'get-distance-button'>Get Distance</button>
+            
+             </div>
+        </div>
+    <br/>
+        <div id="map">
+            <!--The div element for the map where the map shows.-->
+        </div>
+        <div id = 'infoWindow'>
+            <p id = 'place-name'></p><br/>
+            <p id = 'place-address'></p><br/>
+        </div>
+       
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4QSu858SD6Hprv7XPQHFKKvVA_1NXXBw&libraries=places&callback=initMap&v=weekly" defer></script>
+        
+        </body>
+
+</html>

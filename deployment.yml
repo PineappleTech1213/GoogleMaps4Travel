@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: TravelMap
+spec:
+  selector:
+    matchLabels:
+      app: TravelMap
+  template:
+    metadata:
+      labels:
+        app: TravelMap
+    spec:
+      containers:
+      - name: myapp
+        image: <Image>
+        resources:
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
